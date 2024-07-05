@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login_activity">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:textColor="@color/ocean"
+        android:textSize="45sp"
+        android:fontFamily="@font/hammersmith_one"/>
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Email"
+        android:layout_below="@+id/loginTitle"
+        android:fontFamily="@font/hammersmith_one"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Password"
+        android:fontFamily="@font/hammersmith_one"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailLogin"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/hammersmith_one"
+        android:layout_below="@+id/passwordLogin"/>
+
+   <Button
+       android:id="@+id/changeToRegister"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text=""
+
+</RelativeLayout>

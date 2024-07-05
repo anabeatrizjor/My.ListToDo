@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--espaço para definir o estilo de layout a ser aplicado-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".home_screen">
+
+<!--texto aba para a 'search bar' the view setting-->
+
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search here" />
+
+    <!--texto inicial de 'home'-->
+
+
+    <TextView
+        android:id="@+id/homeTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Home"
+        android:textSize="50sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/ocean"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

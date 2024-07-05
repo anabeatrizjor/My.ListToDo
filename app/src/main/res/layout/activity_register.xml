@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".register_activity">
+
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Account"
+        android:fontFamily="@font/hammersmith_one"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:textColor="@color/ocean"/>
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_margin="16dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/createTitle"
+        android:fontFamily="@font/hammersmith_one"/>
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Password"
+        android:fontFamily="@font/hammersmith_one"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailRegister"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="Register"
+        android:fontFamily="@font/hammersmith_one"
+        android:layout_below="@+id/passwordRegister"
+        android:layout_margin="16dp"/>
+
+
+</RelativeLayout>
