@@ -1,5 +1,6 @@
 package com.example.anabeatrizfrana
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -19,7 +20,7 @@ class login_activity : AppCompatActivity() {
         val emailLogin = findViewById<EditText>(R.id.emailLogin)
         val passwordLogin = findViewById<EditText>(R.id.passwordLogin)
         val btnLogin = findViewById<Button>(R.id.buttonLogin)
-        val loginTt = findViewById<TextView>(R.id.loginTitle)
+        val changeScreen = findViewById<Button>(R.id.changeToRegister)
 
         btnLogin.setOnClickListener {
             val email = emailLogin.text.toString()
@@ -31,8 +32,11 @@ class login_activity : AppCompatActivity() {
                 Toast.makeText(this, "Invalid email or password" , Toast.LENGTH_SHORT).show()
             }
         }
-        btn
 
-
+        // para trocar para a tela de registro
+        changeScreen.setOnClickListener {
+            val intent = Intent(this, register_activity::class.java)
+            startActivity(intent)
+        }
     }
 }
